@@ -210,3 +210,83 @@ header {
     height: 100%;
     vertical-align: middle;
 }
+
+.main {
+    margin-top: 150px;
+}
+
+.block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 105px;
+}
+
+.blockleft {
+    background: url(../img/img_blockbg_left_375.png) center center no-repeat;
+    background-size: cover;
+}
+
+.blockright {
+    background: url(../img/img_blockbg_right_375.png) center center no-repeat;
+    background-size: cover;
+}
+
+.article {
+    min-height: 460px;
+}
+
+.title {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 3.0em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.text-box {
+    width: 83%;
+    margin: 30px auto 125px;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-height: 205px;
+}
+
+.text-box p {
+    width: 97.5%;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.4em;
+    margin: auto;
+}
+
+.see-more {
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+}
+
+.see-more p {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 18px;
+}
+
+.blockright .see-more{
+    left: 0;
+}
+
+.blockleft .see-more{
+    right: 0;
+}
+
+.char {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+}
+
+.rightchar {
+    right: 0;
+}
+
+.leftchar {
+    left: 0;
+}
