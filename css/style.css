@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    background: url();
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0%;
+}
+
+.width1440 {
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    height: 24px;
+    position: fixed;
+    z-index: 100;
+}
+@media(min-width: 576px) {
+    header {
+        height: 48px;
+    }
+}
+
+.logo {
+    width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.logo-img {
+    float: left;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.logo p {
+    font-size: 1.2m;
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+}
+@media(min-width: 576px){
+    .logo p{
+        font-size: 1.8em;
+    }
+}
+
+.visual-img {
+    width: 100%;
+}
+
+.subjects {
+    height: 1000px;
+}
