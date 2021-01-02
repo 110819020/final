@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live2D toturial</title>
-    <meta name="keywords" content="Live2D,live2d,live2d toturial,learn live2d">
+    <title>Live2D tutorial</title>
+    <meta name="keywords" content="Live2D,live2d,live2d tutorial,learn live2d">
     <meta name="description" content="前端期末作業：Live 2D非官方教學網站">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="fleud-container">
@@ -23,14 +24,31 @@
             </header>
             <div class="main-visual width1440">
                 <div class="main-img-box">
-                    <picture>
-                        <source class="img-lg" media="(min-width: 576px)" srcset="./img/img_main_visual_1280.png">
+                    <picture>                        
+                        <source class="img-lg" media="(min-width: 992px)" srcset="./img/img_main_visual_1280.png">
+                        <source class="img-md" media="(min-width: 576px)" srcset="./img/img_main_visual_768.png">
                         <img src="./img/img_main_visual_375.png" alt="main visual image" class="visual-img">
                     </picture>
                 </div>
             </div>
             <div class="subjects width1440">
-                
+                <ul class="sub-content fleud-container">
+                    <li class="sub-item sub-basic col-12 col-sm-4">
+                        <a href="#" class="sub-link">
+                            <p class="sub-text">BASIC INFORMATION</p>
+                        </a>
+                    </li>
+                    <li class="sub-item sub-tool col-12 col-sm-4">
+                        <a href="#" class="sub-link">
+                            <p class="sub-text">TOOL INTRODUCTION</p>
+                        </a>
+                    </li>
+                    <li class="sub-item sub-faq col-12 col-sm-4">
+                        <a href="#" class="sub-link">
+                            <p class="sub-text">NEWS, FAQ & MORE</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="main width1440"></div>
             <footer></footer>
