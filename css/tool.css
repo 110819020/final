@@ -205,3 +205,128 @@ header {
 
 /* article div start here */
 
+.main {
+    margin-top: 10%;
+}
+
+.block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.blockleft {
+    background: url() center center no-repeat;
+    background-size: cover;
+}
+@media(min-width: 576px){
+    .blockleft {
+        background: url()center center no-repeat;
+        background-size: cover;
+    }
+}
+@media(min-width: 992px){
+    .blockleft {
+        background: url()center center no-repeat;
+        background-size: cover;
+    }
+}
+
+.blockright {
+    background: url(.) center center no-repeat;
+    background-size: cover;
+}
+@media(min-width: 576px){
+    .blockright {
+        background: url()center center no-repeat;
+        background-size: cover;
+    }
+}
+@media(min-width: 992px){
+    .blockright {
+        background: url()center center no-repeat;
+        background-size: cover;
+    }
+}
+
+.major {
+    min-height: 550px;
+    position: relative;
+}
+
+.title {
+    background-color: rgba(20,39,107,0.8);
+}
+
+.title p {
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+    font-size: 3.0em;
+    text-align: center;
+}
+
+@media(min-width: 576px){
+    .article {
+        display: flex;
+    }
+    .i-w-article {
+        flex-direction: row-reverse;
+    }
+}
+
+.text-box {
+    position: relative;
+    width: 85%;
+    min-height: 210px;
+    margin: 7.5% auto;
+    background-color: rgba(60, 97, 226, 0.4);
+    box-shadow: 4px 4px 4px rgba(20,39,107,0.4);
+}
+@media(min-width: 576px){
+    .text-box {
+        width: 46%;
+        min-height: 360px;
+        margin: 7.5%  5.4%;
+    }
+}
+
+.text-box p {
+    width: 90%;
+    margin: auto;
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+@media(min-width: 576px){
+    .text-box p {
+        font-size: 1.6em;
+    }
+}
+
+.img {
+    width: 70%;
+    margin: auto;
+    height: 213px;
+}
+@media(min-width: 576px){
+    .img {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+.secondary {
+    width: 100%;
+    margin-top: 1%;
+    background: url();
+    background-size: cover;
+}
+
+.secondary p {
+    width: 90%;
+    margin: auto;
+    font-family: 'Kodchasan', sans-serif;
+    color: #000000;
+    font-size: 1.4em;
+}
