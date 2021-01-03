@@ -118,6 +118,11 @@ header {
     width: 93%;
     margin: 6px auto;
     display: flex;
+    box-shadow:2px 2px 2px  rgba(60, 97, 226, 0.4);
+    box-sizing: 3px;
+    position: relative; 
+    -webkit-transition: all 0.2s ease-in-out;
+    transition:  0.2s ease-in-out;
 }
 @media(min-width: 576px){
     .sub-item {
@@ -131,9 +136,13 @@ header {
     .sub-item {
         width: 30%;
         max-width: 270px;
-        height: 240px;
+        height: 246px;
         margin: auto;
     }
+}
+.sub-item:hover {
+    transform: translate(-0.25em, -0.25em);
+    box-shadow:5px 5px 5px  rgba(60, 97, 226, 0.4); 
 }
 
 .sub-basic {

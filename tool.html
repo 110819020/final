@@ -8,12 +8,85 @@
     <meta name="description" content="前端期末作業：Live 2D非官方教學網站">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tool.css">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="fleud-container">
+        <header>
+            <div class="logo">
+                <a href="#">
+                    <img class="logo-img" src="./img/main-page/image/img_logo.png" alt="logo">
+                </a>
+                <p class="trademark">BI CREATIVE STUDIO</p>
+            </div>
+        </header>
+        <div class="main-visual width1440">
+            <div class="main-img-box">
+                <picture>                        
+                    <source class="img-lg" media="(min-width: 992px)" srcset="./img/main-page/image/img_main_visual_1280.png">
+                    <source class="img-md" media="(min-width: 576px)" srcset="./img/main-page/image/img_main_visual_768.png">
+                    <img src="./img/main-page/image/img_main_visual_375.png" alt="main visual image" class="visual-img">
+                </picture>
+            </div>
+        </div>
+        <div class="lessons width1440">
+            <ul class="lesson-content fleud-container">
+                <li class="les-item les-bg-a les-polygon col-12 col-sm-2">
+                    <a href="#" class="les-link">
+                        <p class="les-text">POLYGON</p>
+                    </a>
+                </li>
+                <li class="les-item les-bg-b les-deformer col-12 col-sm-2">
+                    <a href="#" class="les-link">
+                        <p class="les-text">DEFORMER</p>
+                    </a>
+                </li>
+                <li class="les-item les-bg-a les-rotation col-12 col-sm-2">
+                    <a href="#" class="les-link">
+                        <p class="les-text">ROTATION</p>
+                    </a>
+                </li>
+                <li class="les-item les-bg-b les-path col-12 col-sm-2">
+                    <a href="#" class="les-link">
+                        <p class="les-text">PATH</p>
+                    </a>
+                </li>
+                <li class="les-item les-bg-a les-parameter col-12 col-sm-2">
+                    <a href="#" class="les-link">
+                        <p class="les-text">PARAMETER</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main width1440">
+            <div class="block blockright">
+                <div class="major">
+                    <div class="title left-t">
+                        <p>POLYGON</p>
+                    </div>
+                    <div class="text-box left-tb">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, ducimus pariatur necessitatibus facilis voluptates quibusdam ratione atque tenetur fugit maiores voluptatum nemo perspiciatis exercitationem, eveniet illum repudiandae vitae cupiditate saepe.
+                        </p>
+                    </div>
+                    <div class="img right-img">
+                        <picture>                        
+                            <source class="img-lg" media="(min-width: 992px)" srcset="">
+                            <source class="img-md" media="(min-width: 576px)" srcset="">
+                            <img src="" alt="polygon introduce" class="les-img polygon-les-img">
+                        </picture>
+                    </div>
+                </div>
+                <div class="secondary">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum corporis cum nostrum facere itaque debitis, rem ad ab soluta laborum perspiciatis et ea libero reprehenderit incidunt consequatur tempore quod unde.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jqurey.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
