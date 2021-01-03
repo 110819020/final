@@ -115,6 +115,7 @@ header {
 
 .sub-item {
     height: 40px;
+    width: 93%;
     margin: 6px auto;
     display: flex;
 }
@@ -354,6 +355,7 @@ header {
     width: fit-content;
     position: absolute;
     bottom: 0;
+    z-index: 3;
 }
 
 .see-more p {
