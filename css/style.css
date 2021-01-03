@@ -40,6 +40,8 @@ ul {
     margin: auto;
 }
 
+/* header start here */
+
 header {
     width: 100%;
     background-color: #000000;
@@ -89,8 +91,10 @@ header {
     width: 100%;
 }
 
+/* sub start here */
+
 .subjects {
-    margin-top: 16px;
+    margin-top: 40px;
 }
 
 .sub-content {
@@ -211,8 +215,10 @@ header {
     vertical-align: middle;
 }
 
+/* main start here */
+
 .main {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .block {
@@ -225,14 +231,56 @@ header {
     background: url(../img/img_blockbg_left_375.png) center center no-repeat;
     background-size: cover;
 }
+@media(min-width: 576px){
+    .blockleft {
+        background: url(../img/img_blockbg_left_768.png)center center no-repeat;
+        background-size: cover;
+    }
+}
+@media(min-width: 992px){
+    .blockleft {
+        background: url(../img/img_blockbg_left_1280.png)center center no-repeat;
+        background-size: cover;
+    }
+}
 
 .blockright {
     background: url(../img/img_blockbg_right_375.png) center center no-repeat;
     background-size: cover;
 }
+@media(min-width: 576px){
+    .blockright {
+        background: url(../img/img_blockbg_right_768.png)center center no-repeat;
+        background-size: cover;
+    }
+}
+@media(min-width: 992px){
+    .blockright {
+        background: url(../img/img_blockbg_right_1280.png)center center no-repeat;
+        background-size: cover;
+    }
+}
 
 .article {
     min-height: 460px;
+    position: relative;
+    z-index: 2;
+}
+@media(min-width: 576px){
+    .article {
+        width: 70%;
+    }
+    .left-ar {
+        margin: auto auto auto 0;
+    }
+    .right-ar {
+        margin: auto 0 auto auto;
+    }
+}
+@media(min-width: 992px){
+    .article {
+        width: 60%;
+    }
 }
 
 .title {
@@ -240,6 +288,17 @@ header {
     font-size: 3.0em;
     text-align: center;
     color: #ffffff;
+    padding-top: 10px;
+}
+@media(min-width: 576px){
+    .title {
+        padding-top: 15px
+    }
+}
+@media(min-width: 992px){
+    .title {
+        padding-top: 20px
+    }
 }
 
 .text-box {
@@ -247,6 +306,27 @@ header {
     margin: 30px auto 125px;
     background-color: rgba(255, 255, 255, 0.3);
     min-height: 205px;
+    border-radius: 3px;
+    display: flex;
+}
+@media(min-width: 576px){
+    .text-box {
+        min-height: 300px;
+        margin: 3% auto;
+    }
+}
+@media(min-width: 992px){
+    .text-box {
+        min-height: 300px;
+        margin: 3% auto;
+    }
+}
+
+.text-box::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .text-box p {
@@ -254,6 +334,20 @@ header {
     font-family: 'Kodchasan', sans-serif;
     font-size: 1.4em;
     margin: auto;
+}
+@media(min-width: 576px){
+    .text-box p {
+        width: 95%;
+        font-size: 1.6em;
+        margin: auto;
+    }
+}
+@media(min-width: 992px){
+    .text-box p {
+        width: 90%;
+        font-size: 1.8em;
+        margin: auto;
+    }
 }
 
 .see-more {
@@ -269,18 +363,18 @@ header {
     padding: 18px;
 }
 
-.blockright .see-more{
+.left-sm {
     left: 0;
 }
 
-.blockleft .see-more{
+.right-sm {
     right: 0;
 }
 
 .char {
     position: absolute;
-    z-index: 99;
     bottom: 0;
+    z-index: 1;
 }
 
 .rightchar {
