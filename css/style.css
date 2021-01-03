@@ -6,18 +6,18 @@ html {
 
 body {
     width: 100%;
-    background: url(../img/main-page/img_bg_375.png) center center no-repeat fixed;
+    background: url(../img/main-page/background/img_bg_375.png) center center no-repeat fixed;
     background-size: cover;
 }
 @media(min-width: 576px){
     body {
-        background: url(../img/main-page/img_bg_768.png) center center no-repeat fixed;
+        background: url(../img/main-page/background/img_bg_768.png) center center no-repeat fixed;
         background-size: cover;
     }
 }
 @media(min-width: 992px){
     body {
-        background: url(../img/main-page/img_bg_1280.png) center center no-repeat fixed;
+        background: url(../img/main-page/background/img_bg_1280.png) center center no-repeat fixed;
         background-size: cover;
     }
 }
@@ -137,44 +137,44 @@ header {
 }
 
 .sub-basic {
-    background: url(../img/main-page/img_sub_basic_375.png) center center no-repeat;
+    background: url(../img/main-page/background/img_sub_basic_375.png) center center no-repeat;
 }
 @media(min-width: 576px){
     .sub-basic {
-        background: url(../img/main-page/img_sub_basic_768.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_basic_768.png) center center no-repeat;
     }
 }
 @media(min-width: 992px){
     .sub-basic {
-        background: url(../img/main-page/img_sub_basic_1280.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_basic_1280.png) center center no-repeat;
     }
 }
 
 .sub-tool {
-    background: url(../img/main-page/img_sub_tool_375.png) center center no-repeat;
+    background: url(../img/main-page/background/img_sub_tool_375.png) center center no-repeat;
 }
 @media(min-width: 576px){
     .sub-tool {
-        background: url(../img/main-page/img_sub_tool_768.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_tool_768.png) center center no-repeat;
     }
 }
 @media(min-width: 992px){
     .sub-tool {
-        background: url(../img/main-page/img_sub_tool_1280.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_tool_1280.png) center center no-repeat;
     }
 }
 
 .sub-faq {
-    background: url(../img/main-page/img_sub_faq_375.png) center center no-repeat;
+    background: url(../img/main-page/background/img_sub_faq_375.png) center center no-repeat;
 }
 @media(min-width: 576px){
     .sub-faq {
-        background: url(../img/main-page/img_sub_faq_768.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_faq_768.png) center center no-repeat;
     }
 }
 @media(min-width: 992px){
     .sub-faq {
-        background: url(../img/main-page/img_sub_faq_1280.png) center center no-repeat;
+        background: url(../img/main-page/background/img_sub_faq_1280.png) center center no-repeat;
     }
 }
 
@@ -192,6 +192,7 @@ header {
 
 .sub-text {
     color: #ffffff;
+    -webkit-text-stroke: 0.1px rgba(49, 39, 39, 0.5);
     font-size: 1.5em;
     width: fit-content;
     text-align: center;
@@ -233,35 +234,35 @@ header {
 }
 
 .blockleft {
-    background: url(../img/main-page/img_blockbg_left_375.png) center center no-repeat;
+    background: url(../img/main-page/background/img_blockbg_left_375.png) center center no-repeat;
     background-size: cover;
 }
 @media(min-width: 576px){
     .blockleft {
-        background: url(../img/main-page/img_blockbg_left_768.png)center center no-repeat;
+        background: url(../img/main-page/background/img_blockbg_left_768.png)center center no-repeat;
         background-size: cover;
     }
 }
 @media(min-width: 992px){
     .blockleft {
-        background: url(../img/main-page/img_blockbg_left_1280.png)center center no-repeat;
+        background: url(../img/main-page/background/img_blockbg_left_1280.png)center center no-repeat;
         background-size: cover;
     }
 }
 
 .blockright {
-    background: url(../img/main-page/img_blockbg_right_375.png) center center no-repeat;
+    background: url(../img/main-page/background/img_blockbg_right_375.png) center center no-repeat;
     background-size: cover;
 }
 @media(min-width: 576px){
     .blockright {
-        background: url(../img/main-page/img_blockbg_right_768.png)center center no-repeat;
+        background: url(../img/main-page/background/img_blockbg_right_768.png)center center no-repeat;
         background-size: cover;
     }
 }
 @media(min-width: 992px){
     .blockright {
-        background: url(../img/main-page/img_blockbg_right_1280.png)center center no-repeat;
+        background: url(../img/main-page/background/img_blockbg_right_1280.png)center center no-repeat;
         background-size: cover;
     }
 }
@@ -311,7 +312,7 @@ header {
     margin: 30px auto 125px;
     background-color: rgba(60, 97, 226, 0.4);
     min-height: 205px;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
 }
 @media(min-width: 576px){
@@ -338,6 +339,7 @@ header {
     width: 97.5%;
     font-family: 'Kodchasan', sans-serif;
     font-size: 1.4em;
+    color: #ffffff;
     margin: auto;
 }
 @media(min-width: 576px){
@@ -352,7 +354,6 @@ header {
         width: 90%;
         font-size: 1.8em;
         margin: auto;
-        color: #ffffff;
     }
 }
 
