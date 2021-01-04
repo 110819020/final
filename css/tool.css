@@ -153,6 +153,14 @@ header {
 
 /* lesson div start here */
 
+.les-po-50 {
+    right: -50%;
+}
+
+.les-po-0 {
+    right: 0;
+}
+
 .lessons {
     width: 50%;
     height: 100vh;
@@ -161,7 +169,6 @@ header {
     background-color: #26204d;
     border-radius: 0 10px;
     top: 0;
-    right: -50%;
     transition: all 0.6s ease;
     display: block;
 }
@@ -296,7 +303,7 @@ header {
 .les-text {
     color: #ffffff;
     -webkit-text-stroke: 0.1px rgba(49, 39, 39, 0.5);
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: fit-content;
     text-align: center;
     margin: auto;
@@ -551,7 +558,7 @@ footer p{
     z-index: 10;
     width: 12%;
     bottom: 24px;
-    right: 44%;
+    right: 5%;
     border-radius: 50%;    
     background-color: rgba(51, 74, 160, 0.2);
     display: none;
@@ -566,6 +573,7 @@ footer p{
 @media(min-width: 992px){
     .return-btn {
         width: 6%;
+        max-width: 90px;
         right: 3%;
     }
 }

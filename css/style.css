@@ -440,7 +440,7 @@ footer p{
     z-index: 10;
     width: 12%;
     bottom: 24px;
-    right: 44%;
+    right: 5%;
     border-radius: 50%;    
     background-color: rgba(51, 74, 160, 0.2);
     display: none;
@@ -455,6 +455,7 @@ footer p{
 @media(min-width: 992px){
     .return-btn {
         width: 6%;
+        max-width: 90px;
         right: 3%;
     }
 }

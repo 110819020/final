@@ -8,14 +8,44 @@
     <meta name="description" content="前端期末作業：Live 2D非官方教學網站">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/basic.css">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="fleud-container">
+        <header>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo-img" src="./img/main-page/image/img_logo.png" alt="logo">
+                </a>
+                <p class="trademark">BI CREATIVE STUDIO</p>
+            </div>
+        </header>
+        <a class="burger">
+            <span class="burger-manu" menu-click="false"></span>
+        </a>
+        <div class="main-visual width1440">
+            <div class="main-img-box">
+                <picture>                        
+                    <source class="img-lg" media="(min-width: 992px)" srcset="./img/tool-page/background/img_tool_main_1280.png">
+                    <source class="img-md" media="(min-width: 576px)" srcset="./img/tool-page/background/img_tool_main_768.png">
+                    <img src="./img/tool-page/background/img_tool_main_375.png" alt="main visual image" class="visual-img">
+                </picture>
+            </div>
+        </div>
+
+        <div class="return-btn">
+            <img src="./img/img_backToTop_arrow.png" alt="">
+        </div>
+        <footer>
+            <p>COPYRIGHTED 2021</p>
+        </footer>
+    </div>
+
     <script src="./js/jQuery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/basic.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>
