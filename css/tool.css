@@ -119,7 +119,7 @@ header {
     margin: 6px auto;
     display: flex;
     box-shadow:2px 2px 2px  rgba(60, 97, 226, 0.4);
-    box-sizing: 3px; 
+    border: solid 3px rgba(60, 97, 226, 0.3);
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     transition:  0.2s ease-in-out;
@@ -229,40 +229,6 @@ header {
     position: relative;
     width: 100%;
     margin-bottom: 10%;
-}
-
-.blockleft {
-    background: url() center center no-repeat;
-    background-size: cover;
-}
-@media(min-width: 576px){
-    .blockleft {
-        background: url()center center no-repeat;
-        background-size: cover;
-    }
-}
-@media(min-width: 992px){
-    .blockleft {
-        background: url()center center no-repeat;
-        background-size: cover;
-    }
-}
-
-.blockright {
-    background: url(.) center center no-repeat;
-    background-size: cover;
-}
-@media(min-width: 576px){
-    .blockright {
-        background: url()center center no-repeat;
-        background-size: cover;
-    }
-}
-@media(min-width: 992px){
-    .blockright {
-        background: url()center center no-repeat;
-        background-size: cover;
-    }
 }
 
 .major {
@@ -415,7 +381,8 @@ header {
 
 .secondary p {
     width: 90%;
-    margin: auto;
+    margin: auto;    
+    padding: 10px;
     font-family: 'Kodchasan', sans-serif;
     color: #ffffff;
     font-size: 1.4em;
@@ -466,4 +433,41 @@ footer p{
     footer p {
         font-size: 1.8em;
     }
+}
+
+/* return btn start here */
+
+.return-btn {
+    position: fixed;
+    z-index: 10;
+    width: 12%;
+    bottom: 24px;
+    right: 44%;
+    border-radius: 50%;    
+    background-color: rgba(51, 74, 160, 0.2);
+    display: none;
+}
+@media(min-width: 576px){
+    .return-btn {
+        width: 8%;
+        bottom: 48px;
+        right: 3%;
+    }
+}
+@media(min-width: 992px){
+    .return-btn {
+        width: 6%;
+        right: 3%;
+    }
+}
+
+.return-btn img {
+    width: 100%;
+    opacity: .5;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.return-btn img:hover {
+    opacity: 1;
 }
