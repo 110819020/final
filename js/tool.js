@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     //執行回到頂部
 	$('.return-btn').click(function(){ 
-		$('html,body').animate({scrollTop:0}, 200);
+		$('html,body').animate({scrollTop:0}, 100);
     });
 
     //顯示與消失回頂端按鈕
@@ -30,6 +30,23 @@ $(document).ready(function() {
         } else {
             $('.return-btn').css('display', 'none');/*隱藏*/
         }
-    })
+    });
 
+    //burger animate and RWD setting
+    var show = true;
+    var w = $(window).width();
+    $(".burger").click(function() {
+        $(this).toggleClass("is-change");
+        if(show){
+            $(".lessons").css('right','0');
+            show = false
+        }
+        else{
+            $(".lessons").css('right', '-50%');
+            show = true;
+        }
+    });
+    if(w >= 576){
+        $(".lessons").css('right','0');
+    }
 });

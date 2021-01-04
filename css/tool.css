@@ -45,9 +45,10 @@ ul {
 header {
     width: 100%;
     background-color: #000000;
-    height: 24px;
+    height: 36px;
     position: fixed;
-    z-index: 100;
+    z-index: 80;
+    display: flex;
 }
 @media(min-width: 576px) {
     header {
@@ -87,6 +88,65 @@ header {
     }
 }
 
+/* 漢堡選單 */
+
+.burger {
+    z-index: 90;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: fixed;
+    margin: 5.5px;
+    right: 5%;
+    transition: all 0.6s ease;
+}
+@media(min-width: 576px){
+    .burger {
+        display: none;
+    }
+}
+.burger-manu::before,
+.burger-manu::after {
+        content: "";
+        position: absolute;
+}
+.burger-manu,
+.burger-manu::before,
+.burger-manu::after {
+        width: 20px;
+        height: 3px;
+        border-radius: 1px;
+        margin: 46% auto 0 auto;
+        background-color: #fff;
+        display: block;
+        transition: all 0.6s ease;
+}
+.burger-manu::before {
+        margin-top: 8px;
+}
+  
+.burger-manu::after {
+        margin-top: -8px;
+}
+.is-change {
+    right: 40%;
+}
+
+.is-change span{
+    background-color: rgba(0, 0, 0, 0);
+}
+.is-change span::before {
+    margin-top: 0;
+    transform: rotate(-45deg);
+}
+  
+.is-change span::after {
+    margin-top: 0;
+    transform: rotate(45deg);
+}
+
+/* 漢堡選單結束 */
+
 .visual-img {
     width: 100%;
 }
@@ -94,16 +154,57 @@ header {
 /* lesson div start here */
 
 .lessons {
-    margin-top: 40px;
+    width: 50%;
+    height: 100vh;
+    z-index: 85;
+    position: fixed;
+    background-color: #26204d;
+    border-radius: 0 10px;
+    top: 0;
+    right: -50%;
+    transition: all 0.6s ease;
+    display: block;
+}
+@media(min-width: 576px){
+    .lessons {
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 40px;
+        position: relative;
+        right: 0;
+    }
+}
+
+.line {
+    position: absolute;
+    height: 80%;
+    width: 3px;
+    top: 10%;
+    left: 50%;
+    background-color: #ffffff;
+}
+@media(min-width: 576px){
+    .line {
+        background-color: rgb(60, 97, 226);
+        width: 80%;
+        left: 10%;
+        height: 3px;
+        top: 50%;
+    }
 }
 
 .lesson-content {
     width: 100%;
+    height: 100vh;
     margin: auto;
 }
 @media(min-width: 576px){
     .lesson-content {
         display: flex;
+        height: auto;
         justify-content: space-around;
     }
 }
@@ -114,12 +215,13 @@ header {
 }
 
 .les-item {
-    height: 40px;
-    width: 93%;
-    margin: 6px auto;
+    height: 16vh;
+    width: 60%;
+    margin: 3.3vh auto;
     display: flex;
     box-shadow:2px 2px 2px  rgba(60, 97, 226, 0.4);
-    border: solid 3px rgba(60, 97, 226, 0.3);
+    border: solid 3px #ffffff;
+    border-radius: 5px;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     transition:  0.2s ease-in-out;
@@ -130,6 +232,7 @@ header {
         max-width: 206px;
         padding-top: 17%;
         margin: auto;
+        border: solid 3px rgba(60, 97, 226, 0.3);
     }
 }
 @media(min-width: 992px){
@@ -147,25 +250,31 @@ header {
 
 .les-bg-a {
     background: url(../img/tool-page/background/img_les_a_375.png);
+    background-size: cover;
 }
 
 .les-bg-b {
     background: url(../img/tool-page/background/img_les_b_375.png);
+    background-size: cover;
 }
 @media(min-width: 576px){
     .les-bg-a {
         background: url(../img/tool-page/background/img_les_a_768.png);
+        background-size: cover;
     }
     .les-bg-b {
         background: url(../img/tool-page/background/img_les_b_768.png);
+        background-size: cover;
     }
 }
 @media(min-width: 992px){
     .les-bg-a {
         background: url(../img/tool-page/background/img_les_a_1280.png);
+        background-size: cover;
     }
     .les-bg-b {
         background: url(../img/tool-page/background/img_les_b_1280.png);
+        background-size: cover;
     }
 }
 
