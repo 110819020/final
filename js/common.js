@@ -2,6 +2,13 @@ $(document).ready(function() {
     
     var w = $(window).width();
 
+    //Loading 動畫控制
+    window.onload = function() { 
+        $('.loader').delay(200).fadeOut();
+        $('#loading').delay(200).fadeOut('slow');
+    };
+
+
     //執行回到頂部
 	$('.return-btn').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 100);
