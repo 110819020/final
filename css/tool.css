@@ -228,7 +228,7 @@ header {
     display: flex;
     box-shadow:2px 2px 2px  rgba(60, 97, 226, 0.4);
     border: solid 3px #ffffff;
-    border-radius: 5px;
+    border-radius: 50%;
     position: relative;
     -webkit-transition: all 0.2s ease-in-out;
     transition:  0.2s ease-in-out;
@@ -238,6 +238,7 @@ header {
         width: 17%;
         max-width: 206px;
         padding-top: 17%;
+        border-radius: 5px;
         margin: auto;
         border: solid 3px rgba(60, 97, 226, 0.3);
     }
@@ -303,7 +304,7 @@ header {
 .les-text {
     color: #ffffff;
     -webkit-text-stroke: 0.1px rgba(49, 39, 39, 0.5);
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: fit-content;
     text-align: center;
     margin: auto;
@@ -311,7 +312,7 @@ header {
 }
 @media(min-width: 576px){
     .les-text {
-        font-size: 1.5em;
+        font-size: 1.3em;
         position: absolute;
         top:50%;
         left: 50%;
@@ -320,7 +321,7 @@ header {
 }
 @media(min-width: 992px){
     .les-text {
-        font-size: 1.8em;
+        font-size: 1.5em;
         position: absolute;
         top:50%;
         left: 50%;
@@ -375,8 +376,13 @@ header {
 .title p {
     font-family: 'Kodchasan', sans-serif;
     color: #ffffff;
-    font-size: 3.0em;
+    font-size: 2.4em;
     text-align: center;
+}
+@media(min-width: 576px){
+    .title p {
+        font-size: 3.0em;
+    }
 }
 .article {
     position: relative;
@@ -514,7 +520,7 @@ header {
     }
 }
 
-/* fiiter start here */
+/* footer start here */
 
 footer {
     background-color: #000000;

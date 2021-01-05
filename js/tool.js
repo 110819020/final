@@ -17,5 +17,4 @@ $(document).ready(function() {
         $('html,body').animate({ scrollTop: $(".parameter").offset().top - 50 }, 200)
     });
 
-    
 });
