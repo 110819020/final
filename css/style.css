@@ -112,6 +112,97 @@ header {
 
 .visual-img {
     width: 100%;
+    position: relative;
+}
+
+/* download button start here */
+
+.download-box {
+    position: absolute;
+    width: 77%;
+    top: 25%;
+    left: 11.5%;
+    padding-top: 24%;
+    background: url(../img/img_dl_bg_375_2x.png);
+    background-size: cover;
+    background-color: rgba(121,142,218,1);
+    box-shadow:6px 6px 6px  rgba(60, 97, 226, 0.4);
+    border: solid 3px #ffffff;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.download-box:hover {
+    background-color: rgba(20,39,107,1);
+}
+
+.dl-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dl-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 2.4em;
+    color: #ffffff;
+    transform: translateY(-50%);
+}
+
+.dl-text {
+    position: absolute;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 0.9em;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+}
+
+@media(min-width: 576px){
+    .download-box {
+        background: url(../img/img_dl_bg_768_2x.png);
+        background-color: rgba(121,142,218,1);
+        background-size: cover;
+        width: 70%;
+        padding-top: 21.5%;
+        left: 15%;
+    }
+
+    .dl-title {
+        font-size: 3.6em;
+    }
+
+    .dl-text {
+        font-size: 1.8em;
+    }
+}
+
+@media(min-width: 992px){
+    .download-box {
+        background: url(../img/img_dl_bg_1280_2x.png);
+        background-color: rgba(121,142,218,1);
+        background-size: cover;
+        width: 45%;
+        max-width: 645px;
+        padding-top: 14%;
+        left: 27.5%;
+    }
+
+    .dl-title {
+        font-size: 4.2em;
+    }
+
+    .dl-text {
+        font-size: 2.0em;
+    }
 }
 
 /* sub start here */
