@@ -1,5 +1,7 @@
 $(document).ready(function() {
     
+    var w = $(window).width();
+
     //執行回到頂部
 	$('.return-btn').click(function(){ 
 		$('html,body').animate({scrollTop:0}, 100);
@@ -16,7 +18,6 @@ $(document).ready(function() {
     });
 
     //burger animate and RWD setting
-    var w = $(window).width();
     $(".burger").click(function() {
         $(this).toggleClass("is-change");
         
@@ -29,9 +30,18 @@ $(document).ready(function() {
             $(".lessons").addClass("les-po-50");
         }
     });
-    console.log(w);
 
-    if(w >= 576){
+    if($(window).width() >= 576){
         $(".lessons").addClass("les-po-0");
+    }
+});
+
+$(window).resize(function() {
+    w = $(window).width();
+    console.log(w);
+    if($(window).width() < 576){
+        $(".lessons").removeClass("les-po-0");
+        $(".lessons").addClass("les-po-50");
+        $(".burger").removeClass("is-change");
     }
 });

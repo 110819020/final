@@ -46,7 +46,7 @@ ul {
 header {
     width: 100%;
     background-color: #000000;
-    height: 24px;
+    height: 36px;
     position: fixed;
     z-index: 100;
 }
