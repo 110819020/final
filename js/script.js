@@ -19,5 +19,6 @@ $(document).ready(function() {
         } else {
             $('.return-btn').css('display', 'none');/*隱藏*/
         }
-    })
+    });
+
 });

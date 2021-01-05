@@ -56,6 +56,28 @@ header {
     }
 }
 
+.home-btn {
+    position: absolute;
+    width: 30px;
+    top: 3px;
+    left: 2%;
+}
+@media(min-width: 576px){
+    .home-btn {
+        width: 40px;
+        top: 4px;
+    }
+}
+
+.home-btn a {
+    display: block;
+    height: 100%;
+}
+
+.home-btn img{
+    width: 100%;
+}
+
 .logo {
     width:fit-content; width:-webkit-fit-content; width:-moz-fit-content;
     height: 100%;
@@ -259,13 +281,11 @@ header {
 }
 
 .les-bg-a {
-    background: url(../img/tool-page/background/img_les_a_375.png);
-    background-size: cover;
+    background-color:  #26204d;
 }
 
 .les-bg-b {
-    background: url(../img/tool-page/background/img_les_b_375.png);
-    background-size: cover;
+    background-color: #ffffff;
 }
 @media(min-width: 576px){
     .les-bg-a {
@@ -304,13 +324,18 @@ header {
 }
 
 .les-text {
-    color: #ffffff;
     -webkit-text-stroke: 0.1px rgba(49, 39, 39, 0.5);
     font-size: 1.2em;
     width: fit-content;
     text-align: center;
     margin: auto;
     font-family: 'Ledger', serif;
+}
+.les-bg-a p {
+    color: #ffffff;
+}
+.les-bg-b p {
+    color: #26204d;
 }
 @media(min-width: 576px){
     .les-text {
@@ -319,6 +344,10 @@ header {
         top:50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .les-bg-a p,
+    .les-bg-b p{
+        color: #ffffff;
     }
 }
 @media(min-width: 992px){
@@ -339,7 +368,7 @@ header {
 }
 
 .main {
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .block {
