@@ -8,14 +8,49 @@
     <meta name="description" content="前端期末作業：Live 2D非官方教學網站">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/faq.css">
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="fleud-container">
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
+        <header>
+            <div class="home-btn">
+                <a href="./index.html">
+                    <img src="./img/img_home.png" alt="home">
+                </a>
+            </div>
+            <div class="logo">
+                <a href="./index.html">
+                    <img class="logo-img" src="./img/main-page/image/img_logo.png" alt="logo">
+                </a>
+                <p class="trademark">BI CREATIVE STUDIO</p>
+            </div>
+        </header>
+        <div class="wrap">
+            <div class="oops">
+                <picture>                        
+                    <source class="img-lg" media="(min-width: 992px)" srcset="./img/faq-page/img_oops_1280.png">
+                    <source class="img-md" media="(min-width: 576px)" srcset="./img/faq-page/img_oops_768.png">
+                    <img src="./img/faq-page/img_oops_375.png" alt="Error image" class="oops-img">
+                </picture>
+            </div>
+            <p class="title">Oops! </p>
+            <p class="hint">It seems that this site cannot be Found or is still under construction.</p>
+            <div class="return-btn">
+                <img src="./img/img_backToTop_arrow.png" alt="">
+            </div>
+        </div>
+        <footer>
+            <p>COPYRIGHTED 2021</p>
+        </footer>
+    </div>
     <script src="./js/jQuery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./js/faq.js"></script>
     
 </body>

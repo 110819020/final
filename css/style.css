@@ -296,6 +296,7 @@ header {
 }
 
 .sub-faq {
+    -webkit-filter: grayscale(0.8);
     background: url(../img/main-page/background/img_sub_faq_375.png);
     background-size: cover;
 }
@@ -543,6 +544,37 @@ header {
 
 .leftchar {
     left: 0;
+}
+@media(min-width: 992px){
+    .leftchar {
+        left: -8%;
+    }
+}
+
+.blockfaq {
+    -webkit-filter: grayscale(0.8);
+}
+
+.coming-soon {
+    color: rgba(126,126,126,0.5);
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 4.4em;
+    font-weight: bold;
+    -webkit-text-stroke: 0px;
+    text-align: center;
+    padding-top: 35%;
+}
+@media(min-width: 576px){
+    .coming-soon {
+        font-size: 5.0em;
+        padding-top: 35%;
+    }
+}
+@media(min-width: 992px){
+    .coming-soon {
+        font-size: 8.0em;
+        padding-top: 21%;
+    }
 }
 
 /* footer start here */
