@@ -119,7 +119,7 @@ header {
 /* main start here */
 
 .wrap {
-    min-height: calc(100vh - 24px);
+    min-height: 100vh;
 }
 
 .oops {
@@ -141,11 +141,49 @@ header {
 
 .hint {
     width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     font-family: 'Kodchasan', sans-serif;
     font-size: 1.4em;
     color: #4D67C2;
     margin: 5vh auto;
+}
+
+.home {
+    background: url(../img/faq-page/faq_home_btn_375.png);
+    background-size: cover;
+    background-color: rgba(121,142,218,0.5);
+    width: 40%;
+    padding-top: 10%;
+    margin: 5vh auto;
+    border: solid 3px #ffffff;
+    border-radius: 5%;
+    position: relative;
+}
+
+.return-home {
+    position: absolute;
+    font-size: 1.2em;
+    font-family: 'Kodchasan', sans-serif;
+    color: #ffffff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home:hover {
+    background-color: rgba(51, 74, 160, 0.7);
 }
 
 @media(min-width: 576px){
@@ -168,12 +206,32 @@ header {
     .hint {
         font-size: 2.0em;
     }
+
+    .home {
+        background: url(../img/faq-page/faq_home_btn_768.png);
+        background-size: cover;
+        background-color: rgba(121,142,218,0.5);
+        width: 30%;
+        padding-top: 7.2%;
+    }
+
+    .return-home {
+        font-size: 1.8em;
+    }
 }
 
 @media(min-width: 992px){
     .oops img {
         width: 80%;
         padding-left: 20%;
+    }
+
+    .home {
+        background: url(../img/faq-page/faq_home_btn_.png);
+        background-size: cover;
+        background-color: rgba(121,142,218,0.5);
+        width: 16.6%;
+        padding-top: 4%;
     }
 }
 

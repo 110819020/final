@@ -256,7 +256,8 @@ header {
         margin: auto;
     }
 }
-.sub-item:hover {
+.sub-basic:hover, 
+.sub-tool:hover{
     transform: translate(-0.25em, -0.25em);
     box-shadow:5px 5px 5px  rgba(60, 97, 226, 0.4); 
 }
