@@ -153,13 +153,15 @@ header {
 .home {
     background: url(../img/faq-page/faq_home_btn_375.png);
     background-size: cover;
-    background-color: rgba(121,142,218,0.5);
+    background-color: rgba(121,142,218,0.8);
     width: 40%;
     padding-top: 10%;
     margin: 5vh auto;
     border: solid 3px #ffffff;
     border-radius: 5%;
     position: relative;
+    box-shadow:5px 5px 5px  rgba(60, 97, 226, 0.4); 
+    transition:  0.2s ease-in-out;
 }
 
 .return-home {
@@ -210,7 +212,7 @@ header {
     .home {
         background: url(../img/faq-page/faq_home_btn_768.png);
         background-size: cover;
-        background-color: rgba(121,142,218,0.5);
+        background-color: rgba(121,142,218,0.8);
         width: 30%;
         padding-top: 7.2%;
     }
@@ -229,7 +231,7 @@ header {
     .home {
         background: url(../img/faq-page/faq_home_btn_.png);
         background-size: cover;
-        background-color: rgba(121,142,218,0.5);
+        background-color: rgba(121,142,218,0.8);
         width: 16.6%;
         padding-top: 4%;
     }
