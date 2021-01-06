@@ -463,7 +463,7 @@ header {
 
 .text-box p {
     width: 90%;
-    margin: auto;
+    margin: 5% auto;
     font-family: 'Kodchasan', sans-serif;
     color: #ffffff;
     font-size: 1.4em;
@@ -475,7 +475,7 @@ header {
 }
 @media(min-width: 992px){
     .text-box p {
-        font-size: 1.8em;
+        font-size: 2.1em;
     }
 }
 
@@ -545,7 +545,7 @@ header {
 }
 @media(min-width: 992px){
     .secondary p {
-        font-size: 1.8em;
+        font-size: 2.1em;
     }
 }
 
