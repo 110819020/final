@@ -461,6 +461,7 @@ header {
     min-height: 205px;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     transition: all 0.2s ease-in-out;
     position: relative;
 }
@@ -482,55 +483,48 @@ header {
     
 }
 
-.text-box::before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .text {
-    width: 97.5%;
+    width: 90%;
     font-family: 'Kodchasan', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #ffffff;
-    margin: auto;
+    margin: 10% auto;
 }
 @media(min-width: 576px){
     .text {
-        width: 95%;
-        font-size: 1.6em;
-        margin: auto;
+        width: 90%;
+        font-size: 2.0em;
+        margin: 10% auto;
     }
 }
 @media(min-width: 992px){
     .text {
         width: 90%;
-        font-size: 1.8em;
-        margin: auto;
+        font-size: 2.4em;
+        margin: 10% auto;
     }
 }
 
 .see-more {
-    width: fit-content;
-    position: absolute;
-    bottom: 0;
+    width: 100%;
     z-index: 3;
+    margin-bottom: 0;
+    margin-top: auto;
 }
 
 .see-more p {
     font-family: 'Kodchasan', sans-serif;
     font-size: 20px;
     color: #ffffff;
-    padding: 18px;
+    padding: 2%;
 }
 
 .left-sm {
-    left: 0;
+    text-align: left;
 }
 
 .right-sm {
-    right: 0;
+    text-align: right;
 }
 
 .char {
